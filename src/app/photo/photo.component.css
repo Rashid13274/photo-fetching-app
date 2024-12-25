@@ -1,0 +1,48 @@
+/* Center the container on the page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensure button and image are visible */
+    padding: 20px;
+    gap: 20px; /* Add space between button and image */
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the button */
+  .fetch-button {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .fetch-button:hover {
+    background-color: #45a049; /* Slightly darker green */
+    transform: scale(1.05); /* Slight zoom-in effect */
+  }
+  
+  .fetch-button:active {
+    background-color: #3e8e41; /* Even darker green */
+    transform: scale(1); /* Reset scale on click */
+  }
+  
+  /* Style the image */
+  .photo {
+    max-width: 90%; /* Constrain the image width to avoid overflow */
+    max-height: 70vh; /* Constrain the image height to fit the screen */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ddd;
+    object-fit: contain; /* Ensure the image doesn't stretch */
+  }
+  
